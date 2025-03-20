@@ -4,6 +4,7 @@ import "../Navbar.css";
 
 export const About = () => {
   return (
+    
     <>
 
       <div className="education">

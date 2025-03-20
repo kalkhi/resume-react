@@ -1,20 +1,22 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import '../Navbar.css';
+import React from "react";
+import {  useNavigate } from "react-router-dom";
+import "../Navbar.css";
 
 export const Home = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/about');
+    navigate("/about");
   };
 
   return (
-    <>
     <div className="home-container">
-      <div 
+      <div
         className="background-box"
-        style={{ backgroundImage: "url('/desk.jpg')" }} 
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL + "/desk.jpg"})`
+        }}
+        
       >
         <div className="content">
           <h1>Resume</h1>
@@ -23,24 +25,36 @@ export const Home = () => {
       </div>
 
       <div className="dee-content">
-        <div 
+        <div
           className="dee-box"
-          style={{ backgroundImage: "url('/dee.jpg')" }} 
-        >
-        </div>
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/dee.jpg"})`
+          }}
+          
+        ></div>
 
         <div className="dee-boxone">
-          <h1>Hey,there</h1>
-          <p>My name is Vadla DEEPIKA .I Completed My Btech In The Stream Of Electronics And Communication Engineering From Gitam University.During my academic journey, I developed a keen interest in software development, web technologies, and data structures. My technical expertise includes Java, React, SQL, and problem-solving, which I continuously improve through hands-on projects and competitive programming.</p>
-          <div className='dee-boxtwo'>
-          <button onClick={handleNavigate}>My Resume</button>
+          <h1>Hey, there</h1>
+          <p>
+            My name is Vadla DEEPIKA. I completed my B.Tech in Electronics and
+            Communication Engineering from Gitam University. During my academic
+            journey, I developed a keen interest in software development, web
+            technologies, and data structures.
+          </p>
+          <div className="dee-boxtwo">
+            <button onClick={handleNavigate}>My Resume</button>
+            
           </div>
-        </div>  
+        </div>
       </div>
     </div>
-    </>
+
+    
   );
 }
+
+
+
 
 
 
