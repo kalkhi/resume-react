@@ -1,13 +1,13 @@
 import { Home } from "./component/Pages/Home";  
 import { About } from "./component/Pages/About";  
-import  Contact  from "./component/Pages/Contact"; 
-import  Navbar from "./component/Navbar";  
+import Contact from "./component/Pages/Contact"; 
+import Navbar from "./component/Navbar";  
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter> 
+    <BrowserRouter basename="/resume-react">  
       <div className="App">
         <Navbar />
         <Routes>
@@ -22,6 +22,8 @@ function App() {
 }
 
 export default App;
+
+
 
 
 

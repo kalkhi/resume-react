@@ -106,7 +106,7 @@ export const About = () => {
         <div className="certificationtwo">
           <div className="certificationone">
             <ul>
-              <li> Embedded Developer virtual Internship <a href="https://drive.google.com/file/d/1dyyuGmm9oi-aBCZTiaeYwU2jw3eE4yWM/view" target="_blank">- AICTE - EduSkills</a></li>
+              <li> Embedded Developer virtual Internship <a href='/eduskills.pdf' target="_blank">- AICTE - EduSkills</a></li>
               <li>Web Development and Designing <a href="https://drive.google.com/file/d/1iMUoQcNAOYVOTomwoSPsgjHkCHkVXqV1/view"target="_blank">- Oyasis Infobite</a></li>
               <li>Java Programming <a href="https://drive.google.com/file/d/1GGapljE1mXJ6oZPsGqgz4TY2dI_G4DM0/view"target="_blank">- Internpe</a> </li>
             </ul>

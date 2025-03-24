@@ -70,10 +70,17 @@ nav ul{
   
   .dee-box {
     width: 100%;
-    height: 500px;
+    height: 80vh; 
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .dee-box {
+      height: 50vh;
+    }
   }
   
  
